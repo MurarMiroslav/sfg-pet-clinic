@@ -5,10 +5,12 @@ import guru.springframework.sfgpetclinic.services.CrudService;
 
 import guru.springframework.sfgpetclinic.services.OwnerService;
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by jt on 7/21/18.
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 

@@ -5,10 +5,12 @@ import guru.springframework.sfgpetclinic.services.CrudService;
 
 import guru.springframework.sfgpetclinic.services.VetService;
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by jt on 7/21/18.
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
