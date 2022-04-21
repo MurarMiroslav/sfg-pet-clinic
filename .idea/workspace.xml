@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3980aa96-3824-41c8-8b5d-52e02cadd280" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/SpecialtyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/map/SpecialtyMapService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/map/VetServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/map/VetServiceMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/BaseEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +38,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Vet.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pet-clinic-web/src/test/java/guru/springframework/sfgpetclinic/SfgPetClinicApplicationTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Vet.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -87,6 +84,12 @@
     <property name="project.structure.side.proportion" value="0.26689976" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Courses\Spring5_BegginerToGuru\SECTION03\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\controllers" />
+      <recent name="C:\Projects\Courses\Spring5_BegginerToGuru\SECTION03\sfg-pet-clinic\pet-clinic-web\src\main\resources\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="SfgPetClinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="pet-clinic-web" />
@@ -107,6 +110,7 @@
       <workItem from="1650152465687" duration="376000" />
       <workItem from="1650159348462" duration="677000" />
       <workItem from="1650387910370" duration="2654000" />
+      <workItem from="1650558231593" duration="1337000" />
     </task>
     <servers />
   </component>
