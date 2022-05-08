@@ -5,11 +5,16 @@ import guru.springframework.sfgpetclinic.repositories.OwnerRepository;
 import guru.springframework.sfgpetclinic.repositories.PetRepository;
 import guru.springframework.sfgpetclinic.repositories.PetTypeRepository;
 import guru.springframework.sfgpetclinic.services.OwnerService;
-import java.util.HashSet;
-import java.util.Set;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * Created by jt on 8/5/18.
+ */
 @Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
@@ -26,25 +31,24 @@ public class OwnerSDJpaService implements OwnerService {
 	}
 
 	@Override
+	public Owner findByLastName(String lastName) {
+		return ownerRepository.findByLastName(lastName);
+	}
+
+	@Override
+	public List<Owner> findAllByLastNameLike(String lastName) {
+		return ownerRepository.findAllByLastNameLike(lastName);
+	}
+
+	@Override
 	public Set<Owner> findAll() {
-
 		Set<Owner> owners = new HashSet<>();
-
 		ownerRepository.findAll().forEach(owners::add);
-
 		return owners;
 	}
 
 	@Override
 	public Owner findById(Long aLong) {
-//		Optional<Owner> owner = ownerRepository.findById(aLong);
-//
-//		return owner.orElse(null);
-////		if (owner.isPresent()) {
-////			return owner.get();
-////		} else {
-////			return null;
-////		}
 		return ownerRepository.findById(aLong).orElse(null);
 	}
 
@@ -61,10 +65,5 @@ public class OwnerSDJpaService implements OwnerService {
 	@Override
 	public void deleteById(Long aLong) {
 		ownerRepository.deleteById(aLong);
-	}
-
-	@Override
-	public Owner findByLastName(String lastName) {
-		return ownerRepository.findByLastName(lastName);
 	}
 }
