@@ -4,6 +4,8 @@ import guru.springframework.sfgpetclinic.model.Pet;
 import guru.springframework.sfgpetclinic.model.Visit;
 import guru.springframework.sfgpetclinic.services.PetService;
 import guru.springframework.sfgpetclinic.services.VisitService;
+import java.beans.PropertyEditorSupport;
+import java.time.LocalDate;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -26,9 +28,21 @@ public class VisitController {
 		this.petService = petService;
 	}
 
+//	@InitBinder
+//	public void setAllowedFields(WebDataBinder dataBinder) {
+//		dataBinder.setDisallowedFields("id");
+//	}
+
 	@InitBinder
-	public void setAllowedFields(WebDataBinder dataBinder) {
+	public void dataBinder(WebDataBinder dataBinder) {
 		dataBinder.setDisallowedFields("id");
+
+		dataBinder.registerCustomEditor(LocalDate.class, new PropertyEditorSupport() {
+			@Override
+			public void setAsText(String text) throws IllegalArgumentException{
+				setValue(LocalDate.parse(text));
+			}
+		});
 	}
 
 	/**
